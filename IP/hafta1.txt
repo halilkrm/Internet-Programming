@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>My first webpage!</title>
+  </head>
+  
+  <body>
+    <p>This is my first webpage, and I am learning how to create web pages using HTML.</p>
+    <hr/>
+    <p>HTML is a great way to structure the content on the web.</p>
+    <hr/>
+    <a href="http://www.google.com">You can search HTML in Google!</a>
+    <hr/>
+    <img src="https://green.cu.edu.tr/storage/anamenu_icerikleri/Foto/Foto_AnaKampus.jpeg" width="350" height="200"/>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+body { display: flex; justify-content: center; align-items:center ;}
+.ul-top li { display:inline-block; width: 130px; margin-top: 150px;}
+.container { width: 800px;  }
+
+.header { height: 200px; width: 800px;}
+
+.logo { width: 200px; height: 200px ;display: block; float: left; background-image: url(./cicek.jpg);}
+.top-menu { width: 600px; height: 200px; float:right;}
+
+.menu { width: 200px; height: 500px;display: block; float: left;}
+.incontent { width: 600px; height:500px; overflow: hidden;display: block; float: right;}
+
+.footer { height: 300px;}
+.sitemap { width: 300px; height: 300px;display: block; float: left; background-image: url(./cicek.jpg); background-repeat: repeat;}
+.contact { width: 500px; float: right;display: block;}
+a:visited { color:green;}
+a:hover { background-color: aqua;}
+a:active { color: red;background-color: yellow;}
+ul li { height: 50px;}

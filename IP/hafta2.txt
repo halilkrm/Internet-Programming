@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>2. hafta lab çalışması</title>
+    </head>
+
+    <body>
+        <h1> ÇUKUROVA ÜNİVERSİTESİ </h1>
+        <h2> Mühendislik Fakültesi </h2>
+        <h3> Bilgisayar Mühendisliği </h3>
+
+    
+        <p><i>Internet Programming Lab.</i></p>
+        <h2><u>Listeler: </u></h2>
+
+
+        <h2>Sırasız Liste</h2>
+        <ul>
+            <li>Elma</li>
+            <li>Armut</li>
+            <li><del>Çilek</del> <ins>Kiraz</ins></li>
+        </ul>
+    
+        <!-- Ordered List (Sıralı Liste) -->
+        <h2>Sıralı Liste</h2>
+        <ol>
+            <li>Matematik</li>
+            <li>Fizik</li>
+            <li>Kimya</li>
+        </ol>
+    
+        <!-- Definition List (Tanımlama Listesi) -->
+        <h2>Tanımlama Listesi</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hyper Text Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+            <dt>JS</dt>
+            <dd>JavaScript</dd>
+        </dl>
+    
+        <!-- Nested List (İç İçe Liste) -->
+        <h2>İç İçe Liste</h2>
+        <ul>
+            <li>Meyveler
+                <ul>
+                    <li>Elma</li>
+                    <li>Muz</li>
+                    <li>Üzüm</li>
+                </ul>
+            </li>
+            <li>Sebzeler
+                <ul>
+                    <li>Domates</li>
+                    <li>Salatalık</li>
+                    <li>Biber</li>
+                </ul>
+            </li>
+        </ul>
+
+        <a href="mailto:sgsahin@cu.edu.tr">Bize E-posta Gönder</a>
+
+
+        
+    </body>
+</html>

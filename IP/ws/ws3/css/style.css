@@ -1,0 +1,34 @@
+body {
+	color:#990000; /*font color: black*/
+	background-color:#ffffff; /*background color: white*/
+	font-family: arial, verdana, sans-serif; }
+h1 {font-size:18pt;} /*font size for h1*/
+p {text-align: center; font-size:12pt;} /*font size for p*/
+
+p:first-letter {font-size:42px;}
+p:first-line {font-weight:bold;}
+
+
+table {
+background-color:#efefef;
+border-style:solid;
+border-width:1px;
+border-color:#999999;}
+
+th {
+	background-color:#cccccc;
+	font-weight:bold;
+	padding:5px;} /*space between content and edge of cell*/
+
+    td {padding:5px;}
+
+td.code {
+font-family:courier, courier-new, serif;
+font-weight:bold;}
+
+.one {font-weight:normal; text-decoration: line-through;}
+.two {font-weight:bold;}
+.three {font-weight:bolder;}
+.four {font-weight:lighter;}
+.five {font-weight:100;}
+.six {font-weight:1000;}

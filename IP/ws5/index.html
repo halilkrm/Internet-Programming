@@ -1,0 +1,43 @@
+<html>
+<head>
+<script type="text/javascript">
+
+
+var cnt=0;
+
+function test()
+{
+
+    cnt++;
+    if(cnt%2==0)
+
+    alert("Butona tıklandı!");
+}
+
+function test2()
+{
+    var txt = prompt("Renk seçin");
+    
+    document.getElementById("mainp").innerHTML ="Hello World!";
+    document.getElementById("mainp").style.color = txt;
+    confirm("Do you agree?");
+    
+}
+
+</script>
+</head>
+<body>
+<p id="mainp">
+
+</p>
+<button onclick="test2()">Click me</button>
+
+<ul class="class1">
+    <li class="class1">Text</li>
+    <l class="class1">Text</li>
+    <li class="class1">Text</li>
+    <li class="class1">Text</li>
+    <li class="class1">Text</li>
+</ul>
+</body>
+</html>

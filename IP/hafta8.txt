@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Kutu ve Liste</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+        }
+
+        .kutu-container, .liste-container {
+            padding: 20px;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .kutu {
+            width: 150px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .yesil { background: #4CAF50; }
+        .mavi { background: #2196F3; }
+        .turuncu { background: #FF9800; }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: #ddd;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .overflow-box {
+            max-height: 100px;
+            overflow: scroll;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="kutu-container">
+            <div class="kutu yesil">Kutu 1</div>
+            <div class="kutu mavi">Kutu 2</div>
+            <div class="kutu turuncu">Kutu 3</div>
+        </div>
+        <div class="liste-container">
+            <h3>Liste</h3>
+            <ul>
+                <li>Ödevleri Bitir</li>
+                <li>Spor Yap</li>
+                <li>Alışveriş Yap</li>
+            </ul>
+            <div class="overflow-box">
+                Bu kutu overflow örneğidir. İçerik fazla olduğunda scroll çubuğu çıkar.  
+                Ek metin ekleyerek taşmayı test edebilirsiniz.
+                Bu kutu overflow örneğidir. İçerik fazla olduğunda scroll çubuğu çıkar.  
+                Ek metin ekleyerek taşmayı test edebilirsiniz.
+                Bu kutu overflow örneğidir. İçerik fazla olduğunda scroll çubuğu çıkar.  
+                Ek metin ekleyerek taşmayı test edebilirsiniz.
+                Bu kutu overflow örneğidir. İçerik fazla olduğunda scroll çubuğu çıkar.  
+                Ek metin ekleyerek taşmayı test edebilirsiniz.
+                Bu kutu overflow örneğidir. İçerik fazla olduğunda scroll çubuğu çıkar.  
+                Ek metin ekleyerek taşmayı test edebilirsiniz.
+                Bu kutu overflow örneğidir. İçerik fazla olduğunda scroll çubuğu çıkar.  
+                Ek metin ekleyerek taşmayı test edebilirsiniz.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

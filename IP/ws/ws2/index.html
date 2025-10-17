@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>Tablo örneği</title>
+</head>
+<body>
+
+<form action="http://www.example.com/imageUpload.php" method="post"
+name="fromImageUpload" enctype="multipart/form-data">
+<input type="file" name="fileUpload" accept="image/*" />
+<br /><br />
+<input type="submit" value="Submit" />
+</form>
+
+
+
+<form action="http://www.example.org/days.aspx" name="frmDays" method="get">
+<select name="selInformation">
+<optgroup label="Hardware">
+<option value="Desktop">Desktop computers</option>
+<option value="Laptop">Laptop computers</option>
+</optgroup>
+<optgroup label="Software">
+<option value="OfficeSoftware">Office software</option>
+<option value="Games">Games</option>
+</optgroup>
+<optgroup label="Peripherals">
+<option value="Monitors">Monitors</option>
+<option value="InputDevices">Input Devices</option>
+<option value="Storage">Storage</option>
+</optgroup>
+</select>
+
+<br/>
+<br/>
+<br/>
+
+<select size="4" multiple="multiple" name="selDay">
+<option value="Mon">Monday</option>
+<option value="Tue">Tuesday</option>
+<option value="Wed">Wednesday</option>
+<option value="Thu">Thursday</option>
+<option value="Fri">Friday</option>
+<option value="Sat">Saturday</option>
+<option value="Sun">Sunday</option>
+</select>
+<br /><br /><input type="submit" value="Submit" />
+</form>
+
+
+
+<form action="http://www.example.com/flights.aspx" name="frmFlightBooking" method="get">
+Please select which class of travel you wish to fly: <br />
+<input type="radio" name="radClass" value="First" />First class <br />
+<input type="radio" name="radClass" value="Business" />Business class <br />
+<input checked="checked" type="radio" name="radClass" value="Economy" />Economy class <br />
+</form>
+
+
+
+<form action="http://www.example.com/cv.aspx" method="get" name="frmCV">
+Which of the following skills do you possess? Select all that apply.<br/>
+<input type="checkbox" name="chkSkills" value="html" />HTML <br />
+<input checked="checked" type="checkbox" name="chkSkills" value="xhtml" />XHTML <br />
+<input type="checkbox" name="chkSkills" value="CSS" />CSS<br />
+<input type="checkbox" name="chkSkills" value="JavaScript"/> JavaScript<br />
+<input type="checkbox" name="chkSkills" value="aspnet" />ASP.Net<br />
+<input type="checkbox" name="chkSkills" value="php" />PHP
+<input type="submit" name="btnSubmit" value="Gönder">
+</form>
+
+
+
+<form action="login.php" method="post" >
+<span class="">Kullanıcı Adı:</span> <input type="text" name="txtUserName"><br/>
+Şifre: <input type="password" name="txtPassword"> <br/>
+<textarea name="txtArea" cols="50" rows="20">Enter your ideas!</textarea>
+<input type="submit" name="btnSubmit" value="Gönder">
+<button type="button" onclick="alert('Hello world!')" >Click me</button>
+</form>
+
+
+
+
+
+<table border="1">
+<tr>
+<th colspan="1">No</th>
+<th colspan="2" >Name</th>
+<th>Grade</th>
+
+</tr>
+<tr height="100">
+<td rowspan="3">123</td>
+<td>Ali </td><td>Ali</td>
+<td>AA</td>
+
+</tr>
+<tr>
+
+<td>Veli</td><td> Cenk Veli</td>
+<td>BB</td>
+
+</tr>
+<tr>
+
+<td>Veli </td><td> Ahmet Veli</td>
+<td>BB</td>
+
+</tr>
+<tr>
+<td>124</td>
+<td>Veli </td><td>Mert Veli</td>
+<td>BB</td>
+
+</tr>
+
+</table>
+</body>
+</html>

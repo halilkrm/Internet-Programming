@@ -1,0 +1,67 @@
+
+<html>
+        <head>
+            <title>Tablo</title>
+        </head>
+    <body>
+
+    <h2>Tablo</h2>
+
+    <!--<table align="center" bgcolor="#98FF98" border="1" cellpadding="10" cellspacing="5" width="50%">-->
+    <table>
+        <caption> Bilgi Tablosu </caption>
+        <tr>
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>Yaş</th>
+        </tr>
+        <tr>
+            <td>Ayşe</td>
+            <td>Yılmaz</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Mehmet</td>
+            <td>Kara</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Elif</td>
+            <td>Şahin</td>
+            <td>22</td>
+        </tr>
+    </table>
+
+        <br><br>
+        
+    <table>
+        <thead>
+            <tr>
+                <th>Ürün</th>
+                <th>Adet</th>
+                <th>Fiyat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Elma</td>
+                <td>5</td>
+                <td>10 TL</td>
+            </tr>
+            <tr>
+                <td>Armut</td>
+                <td>3</td>
+                <td>15 TL</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Toplam</td>
+                <td>8</td>
+                <td>25 TL</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    </body>
+</html>

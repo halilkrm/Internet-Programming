@@ -1,0 +1,58 @@
+<html>
+<head>
+<script type="text/javascript">
+var cnt=0;
+function test()
+{
+    var txt = prompt("Bir sey yazin: ");
+    alert(txt);
+    cnt++;
+    document.getElementById("header1").innerHTML="Metin Degisti!"; 
+    if(cnt%2==0)
+    document.getElementById("header1").style.color = "Red";
+    else 
+    document.getElementById("header1").style.color = "Blue";
+
+
+    location.href = "https://www.google.com";
+    var item = document.getElementById("list");
+
+}
+
+function validate()
+{
+    var kadi = document.getElementById("kadi").value;
+    var pass = document.getElementById("pass1").value;
+    var passr = document.getElementById("pass2").value;
+    if(kadi.length<8) alert("Kullanici adi cok kisa");
+    if(pass!=passr) alert("Sifreler aynı değil!");
+ return false;
+}
+</script>
+</head>
+<body>
+
+    <form action="index.php" method="post" onsubmit="return validate()">
+        <input type="text" name="kadi" id="kadi">
+        <input type="password" name="pass1" id="pass1">
+        <input type="password" name="pass2" id="pass2">
+        
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h3 id="header1">
+        <script type="text/javascript">
+            document.write("Hello World!");
+        </script>
+    </h3>
+
+    <ul id="list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+<button onclick="test()">Click me!</button>
+</body>
+</html>

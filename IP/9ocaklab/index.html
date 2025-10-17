@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ body{
+    background-color: antiquewhite;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serifs;
+
+ }
+ .row{
+    border: 4px dotted green;
+    margin-bottom: 10px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 100px;
+    padding:20px;
+ }
+
+</style>
+
+<body>
+    <div class="container" >
+    <div class="row" style="background-color: brown;">
+    <h2>Merhaba!</h2>
+    <p>Lütfen adınızı giriniz:</p>
+    <input type="text" placeholder="Adınız"> 
+    <button onclick="alert('Gönderildi')">Gönder</button>
+</div>
+<div class="row" style="background-color: blue;"s>
+    <h2>Toplama İşlemi</h2>
+    <p>İki sayıyı girin:</p>
+    <input type="number" id="n1" placeholder="1.Sayı">
+    <input type="number" id="n2" placeholder="2.Sayı">
+    <button onclick="add()">Topla</button>
+
+
+</div>
+</div>
+
+<script>
+
+    function add(){
+        var nmb1 = Number(document.getElementById("n1").value);
+        var nmb2 = Number(document.getElementById("n2").value);
+
+        alert(nmb1+nmb2);
+    }
+</script>
+
+
+
+</body>
+</html>

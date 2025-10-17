@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner CSS Page</title>
+    <style>
+        
+
+        /* General Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdfdfd;
+            color: #000000;
+            padding: 10px;
+        }
+
+        /* Header Styles */
+        h1 {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 10px;
+            color: #00509e;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #004080;
+        }
+
+        /* Paragraph Styles */
+        p {
+            font-size: 16px;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        /* Highlight Important Words */
+        .highlight {
+            color: #d32f2f;
+            font-weight: bold;
+        }
+
+        /* List Styling */
+        ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: separate;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px dashed #db2323;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #004080;
+            color: #fff;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My First CSS Page</h1>
+    
+    <h2>Introduction</h2>
+    <p>CSS is used to style HTML elements. It allows you to change colors, fonts, layouts, and more. Here is a simple example of a styled web page.</p>
+
+    <h2>Features</h2>
+    <ul>
+        <li><span class="highlight">Easy to learn</span> syntax</li>
+        <li>Customizable <span class="highlight">styles</span></li>
+        <li>Reusable rules for consistency</li>
+    </ul>
+
+    <h2>Example Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Font Styling</td>
+                <td>Change the size, color, and family of text</td>
+            </tr>
+            <tr>
+                <td>Backgrounds</td>
+                <td>Add colors or images to elements</td>
+            </tr>
+            <tr>
+                <td>Borders</td>
+                <td>Customize borders around elements</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        Made with ♥ while learning CSS.
+    </footer>
+</body>
+</html>

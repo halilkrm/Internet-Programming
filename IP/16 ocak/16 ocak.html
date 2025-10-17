@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        background-color: #FAE3D9;
+    }
+    .overflow {
+            width: 300px; 
+            height: 150px; 
+            border: 2px solid #000;
+            padding: 10px; 
+            margin-left: 550px;
+            overflow: auto; 
+            background-color: #f9f9f9; 
+        }
+</style>
+<body>
+    <h1>Form Ve Tablo</h1>
+     <form action="">
+     <input type="text" placeholder="Adınızı Giriniz:" id="kullaniciAdi" required>
+       <input type="submit" name="submit" >
+    </form>
+    <h2>Matematik İşlemi</h2>
+    <p>İki sayı girin ve sonucu görmek için tıklayın: </p>
+     <input type="text" placeholder="1.sayı" id="sayi1">
+     <input type="text" placeholder="2.sayı" id="sayi2">
+     <button onclick="topla()">Topla</button>
+
+     <p id="sonucAlani"></p>
+
+     <h3>Metin Kutusu:</h3>
+
+<div class="overflow">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo velit minima laborum itaque, eum enim corporis ipsum praesentium voluptatum error amet dolorum eveniet? Quidem molestias enim possimus quos illo tempore ex repudiandae ut officiis atque laudantium voluptatibus architecto, laboriosam praesentium in aperiam omnis et eaque eligendi, autem cum dolorem excepturi vitae doloribus? Facilis, voluptatum praesentium deserunt, a reiciendis repellat, excepturi vero delectus dignissimos perspiciatis culpa? Quis optio, quibusdam, quos suscipit, maxime magni quisquam repudiandae sed officiis soluta vero! Itaque fuga, quod temporibus aperiam totam odit expedita dolore? Suscipit atque sapiente modi quas dolorem! Aut, corrupti quibusdam odit sit consequatur architecto. </div>
+
+
+    <script> 
+
+
+    function topla() {
+            var sayi1 = document.getElementById("sayi1").value;
+            var sayi2 = document.getElementById("sayi2").value;
+
+            var toplam = Number(sayi1) + Number(sayi2);
+
+ if(!sayi1 || !sayi2){
+    alert("Lütfen gecerli bir sayı girin!")
+ }
+ else {
+            var sonucParagrafi = document.getElementById("sonucAlani");
+            sonucParagrafi.textContent = "Sonuç: " + toplam;
+ }
+        }
+
+
+    </script>
+</body>
+</html>

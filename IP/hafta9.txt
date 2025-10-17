@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript ile Toplama İşlemi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #FAE3D9;  /* Pastel Pembe */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Merhaba!</h1>
+    <p>Lütfen adınızı girin:</p>
+    
+    <input type="text" id="kullaniciAdi" placeholder="Adınız">
+    <button onclick="karsila()">Gönder</button>
+    
+    <h2>Toplama İşlemi</h2>
+    <p>İki sayıyı girin:</p>
+    
+    <input type="number" id="sayi1" placeholder="1. Sayı">
+    <input type="number" id="sayi2" placeholder="2. Sayı">
+    <button onclick="toplamaYap()">Topla</button>
+
+    <p id="sonucAlani"></p>  <!-- Sonuç burada gösterilecek -->
+
+    <script>
+        // Kullanıcıyı karşılayan fonksiyon
+        function karsila() {
+            var ad = document.getElementById("kullaniciAdi").value;
+            
+            if(ad) {
+                alert("Merhaba, " + ad + "! Sitemize hoş geldiniz.");
+            } else {
+                alert("Lütfen adınızı girin!");
+            }
+        }
+
+        // İki sayıyı toplayan fonksiyon
+        function toplamaYap() {
+            var sayi1 = document.getElementById("sayi1").value;
+            var sayi2 = document.getElementById("sayi2").value;
+
+            var toplam = Number(sayi1) + Number(sayi2);
+
+            // Sonucu belirli bir alanın içine yazdır
+            var sonucParagrafi = document.getElementById("sonucAlani");
+            sonucParagrafi.textContent = "Sonuç: " + toplam;
+        }
+    </script>
+
+</body>
+</html>

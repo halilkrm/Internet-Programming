@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kısa Sayfa 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #e6fffc;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .math-section {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px;
+            background-color: #00509e;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #003f7d;
+        }
+        input {
+            padding: 5px;
+            margin: 5px;
+            border: 1px solid #ccc;
+        }
+        .overflow-box {
+            background-color: #ffffff;
+            width: 300px;
+            height: 100px;
+            overflow: auto;
+            border: 1px solid #ccc;
+            margin: 20px auto;
+            padding: 10px;
+        }
+        footer {
+            margin-top: auto;
+            background-color: #00509e;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form ve Tablo</h1>
+    <form onsubmit="handleSubmit(event)">
+        <input type="text" id="nameInput" placeholder="Adınız" required>
+        <button type="submit">Gönder</button>
+    </form>
+
+    <div class="math-section">
+        <h2>Matematik İşlemi</h2>
+        <p>İki sayı girin ve sonucu görmek için tıklayın:</p>
+        <input type="number" id="number1" placeholder="Birinci sayı">
+        <input type="number" id="number2" placeholder="İkinci sayı">
+        <button onclick="calculateSum()">Topla</button>
+        <p id="result"></p>
+    </div>
+
+    <h2>Metin Kutusu: </h2>
+    <div class="overflow-box">
+        <h3> Metin: </h3>
+        Bu bir overflow kutusudur. Uzun metinler buraya sığmazsa kaydırılabilir hale gelir. Örneğin: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Çukurova Üniversitesi</p>
+    </footer>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('nameInput').value;
+            alert(`Merhaba, ${name}!`);
+        }
+
+        function calculateSum() {
+            const num1 = parseFloat(document.getElementById('number1').value);
+            const num2 = parseFloat(document.getElementById('number2').value);
+            if (!isNaN(num1) && !isNaN(num2)) {
+                document.getElementById('result').textContent = `Sonuç: ${num1 + num2}`;
+            } else {
+                document.getElementById('result').textContent = 'Lütfen geçerli iki sayı girin.';
+            }
+        }
+    </script>
+</body>
+</html>

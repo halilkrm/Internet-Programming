@@ -1,0 +1,41 @@
+<head>
+    <title>FORM and FRAME</title>
+</head>
+<body>
+    <h1>Basic Form</h1>
+    <!-- Form Section -->
+    <form onsubmit="alert('Form submitted successfully!'); return false;">
+        <label for="username">Text Input (Username):</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password Input:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="comments">Metin giriniz:</label><br>
+        <textarea id="comments" name="comments" rows="10" cols="30" placeholder="Write something here..."></textarea><br><br>
+
+        <label>
+            <input type="checkbox" name="subscribe" value="yes">
+            Subscribe to Newsletter
+        </label><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <hr>
+
+    <!-- Frames Section -->
+    <h2>Basic Frame</h2>
+    <p>Click the links below to navigate between frames:</p>
+    <iframe name="frame1" width="48%" height="300px"></iframe>
+    <iframe name="frame2" width="48%" height="300px"></iframe>
+
+    <br><br>
+    <!-- Links Navigation -->
+    <a href="https://www.wikipedia.org" target="frame1">Open Wikipedia in Frame 1</a>
+    <a href="https://tr.wikipedia.org/wiki/Anasayfa" target="frame2">Open Vikipedi in Frame 2</a>
+    <hr>
+
+
+</body>
+</html>
